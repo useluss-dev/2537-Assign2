@@ -1,0 +1,8 @@
+<%- include("templates/header"); %>
+<h1>Hello, <%= username %>.</h1>
+<img src="<%= imageUrl %>" style="max-width: 300px; height: auto" />
+<br />
+<form action="/logout" method="get">
+  <button>Logout</button>
+</form>
+<%- include("templates/footer") %>
