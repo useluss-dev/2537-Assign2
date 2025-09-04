@@ -1,8 +1,13 @@
 <%- include("templates/header") %>
-<form action="/signup" method="get">
-  <button>Sign up</button>
-</form>
-<form action="/login" method="get">
-  <button>Log in</button>
-</form>
+<div class="d-flex justify-content-center align-items-center" style="min-height: calc(100vh - 120px); padding-top: 60px; padding-bottom: 60px;">
+  <div class="container" style="max-width: 400px;">
+    <form action="/signup" method="get" class="mb-3">
+      <button type="submit" class="btn btn-primary w-100 py-2">Sign up</button>
+    </form>
+    <form action="/login" method="get">
+      <button type="submit" class="btn btn-secondary w-100 py-2">Log in</button>
+    </form>
+  </div>
+</div>
 <%- include("templates/footer") %>
+
